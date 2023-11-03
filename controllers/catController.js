@@ -164,29 +164,19 @@ const editPage = async (req, res) => {
 const updateCat = async (req, res) => {
   try {
     let cat = await Cat.findById(req.params.id);
-    if (cat.owner.equals(req.user._id)) {
-      upload.single('image')(req, res, async err => {
-        if (err) {
-          console.error(err);
-          return res.status(400).send('Error uploading file');
-        }
-
-        const result = await cloudinary.uploader.upload(req.file.path); // Upload to Cloudinary
 
         const updatedCat = {
           name: req.body.name,
           age: req.body.age,
           favoriteFood: req.body.favoriteFood,
           funFact: req.body.funFact,
-          image: result.secure_url // Updated Cloudinary URL of the image
         };
 
         if (cat.owner.equals(req.user._id)) {
           await Cat.findByIdAndUpdate(req.params.id, updatedCat);
         }
         res.redirect('/');
-      });
-    }
+
   } catch (err) {
     console.error(err);
     res.status(500).send('Server Error');

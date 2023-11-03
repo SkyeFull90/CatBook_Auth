@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="505d4f07-df26-4e76-b116-26e7a7fb4ff8" name="Changes" comment="finished building out app with new cloudinary storage change to mongodb">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="505d4f07-df26-4e76-b116-26e7a7fb4ff8" name="Changes" comment="fixed bug with the update controller requiring a file upload which crashed prod when using the update page and controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/catController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/catController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/catRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/catRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/edit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +70,17 @@
       <workItem from="1698888091596" duration="28000" />
       <workItem from="1698974510863" duration="1414000" />
       <workItem from="1698975975769" duration="2219000" />
-      <workItem from="1698985747158" duration="1295000" />
+      <workItem from="1698985747158" duration="3552000" />
     </task>
+    <task id="LOCAL-00001" summary="finished building out app with new cloudinary storage change to mongodb">
+      <option name="closed" value="true" />
+      <created>1698987085482</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698987085482</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finished building out app with new cloudinary storage change to mongodb" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished building out app with new cloudinary storage change to mongodb" />
+    <MESSAGE value="fixed bug with the update controller requiring a file upload which crashed prod when using the update page and controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug with the update controller requiring a file upload which crashed prod when using the update page and controller" />
   </component>
 </project>
