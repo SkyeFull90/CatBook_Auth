@@ -40,6 +40,8 @@ res.locals.currentUser = req.user;
 next();
 });
 
+
+
 app.use('/', userRoutes);
 app.use('/', catRoutes);
 
