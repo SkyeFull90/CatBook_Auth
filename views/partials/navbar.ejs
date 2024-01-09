@@ -1,10 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">CatBook</a>
+  <button class="navabar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle nav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
   <% if(user) { %>
     <span class="navbar-text text-light ml-3">Logged in as: <%= user.username %></span>
   <% } %>
-  <div class="navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
       </li>
