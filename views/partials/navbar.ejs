@@ -1,15 +1,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">CatBook</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span> <!-- This is the hamburger icon -->
-  </button>
   <% if(user) { %>
     <span class="navbar-text text-light ml-3">Logged in as: <%= user.username %></span>
   <% } %>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
       </li>
       <% if (!user) { %>
         <li class="nav-item">
